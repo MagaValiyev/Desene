@@ -1,7 +1,14 @@
-import HomeScreen from './src/screens/HomeScreen';
+import {StatusBar} from 'react-native';
+
+import PresentationDeck from './src/navigation/PresentationDeck';
 
 function App() {
-  return <HomeScreen />;
+  return (
+    <>
+      <StatusBar hidden />
+      <PresentationDeck />
+    </>
+  );
 }
 
 export default App;
